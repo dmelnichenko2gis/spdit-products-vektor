@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Структура слоёв векторных карт</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>🗺️ Структура слоёв векторных карт</h1>
+        <p class="subtitle">Справочник слоёв, геометрии и атрибутов векторной карты</p>
+    </div>
+</header>
+
+<nav class="tabs container">
+    <button class="tab-btn active" data-tab="vector-example">
+        🛰️ Пример векторных данных
+    </button>
+
+    <button class="tab-btn" data-tab="standard">
+        📦 Стандартный набор
+    </button>
+
+    <button class="tab-btn" data-tab="additional">
+        ➕ Дополнительные слои
+    </button>
+
+    <button class="tab-btn" data-tab="esri">
+        🛣️ Дорожный граф ESRI
+    </button>
+
+</nav>
+
+<main class="container">
+
+    <div class="tools">
+        <div class="search-box">
+            <input
+                type="text"
+                id="search"
+                placeholder="🔍 Поиск по слою, описанию или атрибутам..."
+            >
+
+            <button id="clear-search" class="clear-btn" type="button">
+                Очистить
+            </button>
+        </div>
+
+        <div class="filter-box">
+            <select id="geom-filter">
+                <option value="all">Все типы геометрии</option>
+                <option value="polygon">Полигон</option>
+                <option value="polyline">Линия</option>
+                <option value="point">Точка</option>
+                <option value="other">Прочее</option>
+            </select>
+        </div>
+    </div>
+
+    <section id="standard" class="tab-content">
+        <div class="section-head">
+            <div>
+                <h2>Стандартный набор слоёв</h2>
+                <p class="section-desc">
+                    Базовые слои, которые обычно присутствуют на каждой карте.
+                </p>
+            </div>
+
+            <div class="counter" id="standard-count">0</div>
+        </div>
+
+        <div class="cards-grid" id="standard-grid"></div>
+    </section>
+
+    <section id="additional" class="tab-content">
+        <div class="section-head">
+            <div>
+                <h2>Дополнительные слои</h2>
+                <p class="section-desc">
+                    Слои, которые добавляются при необходимости и расширяют карту.
+                </p>
+            </div>
+
+            <div class="counter" id="additional-count">0</div>
+        </div>
+
+        <div class="cards-grid" id="additional-grid"></div>
+    </section>
+
+    <section id="esri" class="tab-content">
+        <div class="section-head">
+            <div>
+                <h2>Дорожный граф ESRI</h2>
+                <p class="section-desc">
+                    Слои дорожного графа в формате ESRI: улицы и ограничения поворотов.
+                </p>
+            </div>
+
+            <div class="counter" id="esri-count">0</div>
+        </div>
+
+        <div class="cards-grid" id="esri-grid"></div>
+    </section>
+
+    <!-- НОВЫЙ РАЗДЕЛ С КАРТОЙ -->
+    <section id="vector-example" class="tab-content active">
+        <div class="section-head">
+            <div>
+                <h2>Пример векторных данных</h2>
+                <p class="section-desc">
+                    Интерактивный пример отображения векторных слоёв векторной карты на подложке 2ГИС.
+                    Векторные слои передаются клиенту без картографической подложки 2ГИС.
+                </p>
+            </div>
+        </div>
+    
+        <div class="vector-map-layout">
+    
+            <div class="vector-map-wrapper">
+                <div id="vector-map"></div>
+            </div>
+    
+            <aside class="vector-layers-panel">
+                <div class="vector-panel-head">
+                    <div>
+                        <h3>Слои карты</h3>
+                        <p>Включай и отключай примеры векторных слоёв • Пример атрибутивной информации по клику на объект</p>
+                    </div>
+                </div>
+    
+                <div class="vector-layer-list" id="vector-layer-list">
+                    <p class="layers-loading">Загрузка списка слоёв...</p>
+                </div>
+            </aside>
+    
+        </div>
+    </section>
+
+</main>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <button class="modal-close" id="modal-close" type="button">✕</button>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>Структура данных векторных карт • Документация Службы продаж данных и технологий 2ГИС</p>
+    </div>
+</footer>
+
+<script src="https://mapgl.2gis.com/api/js/v1"></script>
+<script src="script.js"></script>
+</body>
+</html>

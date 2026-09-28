@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "NameRiver",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"xy_coordinate_resolution": 1e-15,
+"features": [
+{ "type": "Feature", "properties": { "Name": "Ишим", "Id": "9570862172733533" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 71.452018360118259, 51.126669495966986 ], [ 71.452194070587836, 51.125458191583313 ] ] ] } }
+]
+}

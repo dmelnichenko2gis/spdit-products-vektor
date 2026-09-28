@@ -1,0 +1,178 @@
+[
+  {
+    "id": "City",
+    "title": "Населённые пункты",
+    "file": "data/City.geojson",
+    "type": "polygon",
+    "color": "#2563eb",
+    "visible": true
+  },
+  {
+    "id": "District",
+    "title": "Административные районы",
+    "file": "data/District.geojson",
+    "type": "polygon",
+    "color": "#7c3aed",
+    "visible": true
+  },
+  {
+    "id": "LivingArea",
+    "title": "Жилмассивы",
+    "file": "data/LivingArea.geojson",
+    "type": "polygon",
+    "color": "#16a34a",
+    "visible": false
+  },
+  {
+    "id": "Quarter",
+    "title": "Кварталы",
+    "file": "data/Quarter.geojson",
+    "type": "polygon",
+    "color": "#84cc16",
+    "visible": false
+  },
+  {
+    "id": "Place",
+    "title": "Места",
+    "file": "data/Place.geojson",
+    "type": "polygon",
+    "color": "#a855f7",
+    "visible": false
+  },
+  {
+    "id": "House",
+    "title": "Дома",
+    "file": "data/House.geojson",
+    "type": "polygon",
+    "color": "#f97316",
+    "visible": false
+  },
+  {
+    "id": "ParkingTerritory",
+    "title": "Территория парковок",
+    "file": "data/ParkingTerritory.geojson",
+    "type": "polygon",
+    "color": "#fb7185",
+    "visible": false
+  },
+  {
+    "id": "RiverPolygon",
+    "title": "Реки площадные",
+    "file": "data/RiverPolygon.geojson",
+    "type": "polygon",
+    "color": "#38bdf8",
+    "visible": false
+  },
+  {
+    "id": "Street",
+    "title": "Улицы",
+    "file": "data/Street.geojson",
+    "type": "line",
+    "color": "#0284c7",
+    "visible": true
+  },
+  {
+    "id": "RoadGraph",
+    "title": "Дорожный граф",
+    "file": "data/RoadGraph.geojson",
+    "type": "line",
+    "color": "#dc2626",
+    "visible": false
+  },
+  {
+    "id": "TransportEdge",
+    "title": "Транспортный граф",
+    "file": "data/TransportEdge.geojson",
+    "type": "line",
+    "color": "#9333ea",
+    "visible": false
+  },
+  {
+    "id": "Bridge",
+    "title": "Мосты",
+    "file": "data/Bridge.geojson",
+    "type": "line",
+    "color": "#64748b",
+    "visible": false
+  },
+  {
+    "id": "RiverLine",
+    "title": "Реки линейные",
+    "file": "data/RiverLine.geojson",
+    "type": "line",
+    "color": "#0ea5e9",
+    "visible": false
+  },
+  {
+    "id": "NameRiver",
+    "title": "Подписи рек",
+    "file": "data/NameRiver.geojson",
+    "type": "line",
+    "color": "#06b6d4",
+    "visible": false
+  },
+  {
+    "id": "Tunnel",
+    "title": "Туннели",
+    "file": "data/Tunnel.geojson",
+    "type": "line",
+    "color": "#334155",
+    "visible": false
+  },
+  {
+    "id": "Zven",
+    "title": "Ж/д полотно",
+    "file": "data/Zven.geojson",
+    "type": "line",
+    "color": "#6366f1",
+    "visible": false
+  },
+  {
+    "id": "RoadCrosses",
+    "title": "Перекрёстки",
+    "file": "data/RoadCrosses.geojson",
+    "type": "point",
+    "color": "#ef4444",
+    "visible": false
+  },
+  {
+    "id": "Sights",
+    "title": "Достопримечательности",
+    "file": "data/Sights.geojson",
+    "type": "point",
+    "color": "#f59e0b",
+    "visible": false
+  },
+  {
+    "id": "HouseEnter",
+    "title": "Входы в здания",
+    "file": "data/HouseEnter.geojson",
+    "type": "point",
+    "color": "#22c55e",
+    "visible": false
+  },
+  {
+    "id": "ParkingsGround",
+    "title": "Парковки наземные",
+    "file": "data/ParkingsGround.geojson",
+    "type": "point",
+    "color": "#f97316",
+    "visible": false
+  },
+  {
+    "id": "ParkingsMultilevel",
+    "title": "Парковки многоуровневые",
+    "file": "data/ParkingsMultilevel.geojson",
+    "type": "point",
+    "color": "#ea580c",
+    "visible": false
+  },
+  {
+    "id": "ParkingsUnderground",
+    "title": "Парковки подземные",
+    "file": "data/ParkingsUnderground.geojson",
+    "type": "point",
+    "color": "#c2410c",
+    "visible": false
+  }
+]
