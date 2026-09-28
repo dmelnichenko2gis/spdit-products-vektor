@@ -1,0 +1,7 @@
+site_name: SPDIT Products Vektor
+
+theme:
+  name: material
+
+nav:
+  - Главная: index.md
